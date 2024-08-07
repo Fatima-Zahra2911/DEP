@@ -1,0 +1,253 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cta {
+  background-color: #4caf50;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.albums {
+  padding: 2rem;
+  background-color: #000;
+}
+
+.albums h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.item img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.gallery {
+  padding: 2rem;
+  background-color: #222;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact,
+.book {
+  padding: 2rem;
+}
+
+.contact {
+  background-color: #333;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.book {
+  background-color: #444;
+}
+
+.book h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.book form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.book form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.book form input,
+.book form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 0;
+  }
+}
+.foot {
+  display: flex;
+  justify-content: space-around;
+}
+.foot a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+.copyright {
+  color: white;
+  font-size: 12px;
+  padding: 15px;
+}
+.foot3 a:hover {
+  color: white;
+}
