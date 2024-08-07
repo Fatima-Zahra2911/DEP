@@ -1,0 +1,185 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #10273d;
+  color: #343a40;
+}
+
+/* Header */
+.header {
+  background: url("website.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.header h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.header p {
+  font-size: 1.5em;
+}
+.navbar {
+  background-color: #10273d;
+}
+
+/* Section Heading */
+.section-heading {
+  margin-top: 50px;
+  margin-bottom: 20px; /* Reduced margin-bottom */
+  font-size: 2.5em;
+}
+
+.section-subheading {
+  margin-bottom: 20px; /* Reduced margin-bottom */
+  font-size: 1.25em;
+}
+
+/* Services */
+#services .service-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* Portfolio */
+
+.portfolio-item {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.portfolio-link {
+  display: block; /* Ensure the link takes up the whole area */
+}
+
+.img-fluid {
+  display: block; /* Remove any extra space below the image */
+  width: 100%; /* Make the image responsive and fill the width of the container */
+  height: auto; /* Maintain aspect ratio of the image */
+  border-radius: 8px; /* Optional: Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better focus on hover */
+}
+
+/*project */
+.project-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-link {
+  display: block;
+}
+
+.img-fluid {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-caption {
+  margin-top: 15px;
+}
+
+#contact {
+  margin-bottom: 50px; /* Added margin-bottom to create space */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+/* Footer */
+.footer {
+  padding: 50px 0;
+}
+
+.footer h4 {
+  margin-bottom: 20px;
+}
+
+.btn-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Media Queries for Desktop, Tablet, and Mobile */
+
+/* Mobile devices (landscape and portrait) */
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  .section-heading {
+    font-size: 1.8em;
+  }
+
+  .portfolio-caption h4 {
+    font-size: 1.2em;
+  }
+}
+
+/* Tablet devices (portrait) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header h1 {
+    font-size: 2.5em;
+  }
+
+  .header p {
+    font-size: 1.2em;
+  }
+
+  .section-heading {
+    font-size: 2em;
+  }
+
+  .portfolio-caption h4 {
+    font-size: 1.4em;
+  }
+}
+
+/* Desktop devices */
+@media (min-width: 769px) {
+  .header h1 {
+    font-size: 4em;
+  }
+
+  .header p {
+    font-size: 1.5em;
+  }
+
+  .section-heading {
+    font-size: 2.5em;
+  }
+
+  .portfolio-caption h4 {
+    font-size: 1.6em;
+  }
+  .project-item {
+    margin-bottom: 60px; /* Increase the bottom margin for larger screens */
+  }
+}
