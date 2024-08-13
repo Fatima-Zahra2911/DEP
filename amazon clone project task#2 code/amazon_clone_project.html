@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="amazon_project.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-sec">Pakistan</p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input placeholder="Search Amazon" class="search-input" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="nav-eng border">
+          <i class="fa fa-flag"></i>
+          ENG
+        </div>
+        <div class="nav-signin border">
+          <span>Hello , sign in</span>
+          <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="nav-return border">
+          <span>Returns</span>
+          <p class="nav-second">& Orders</p>
+        </div>
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+    </header>
+    <div class="cntnr">
+      <div class="bright">
+        <span class="fas fa-sun"></span>
+        <input type="range" name="rng" id="range" min="50" max="100" />
+        <span class="fas fa-moon"></span>
+      </div>
+    </div>
+    <div class="hero-section" id="panel">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="hero img 1.jpg" alt="hero image" />
+          </div>
+          <div class="slide">
+            <img src="hero img 2.jpg" alt="hero image" />
+          </div>
+          <div class="slide">
+            <img src="hero img 3.jpg" alt="hero image" />
+          </div>
+          <div class="slide">
+            <img src="hero img 4.jpg" alt="hero image" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn" onclick="previous()">&#10094;</button>
+          <button class="btn" onclick="next()">&#10095;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="shop-sec">
+      <div class="box1 box">
+        <div class="box-content">
+          <h3>Health and Personal Care</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box2_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Health and Personal Care</h3>
+                <br />
+                Revitalize your wellness routine with our exclusive deals on
+                health and personal care items. Explore a wide selection of
+                vitamins, dietary supplements, and organic skincare products
+                designed to promote overall well-being. Our carefully curated
+                collection includes top brands and must-have essentials to keep
+                you feeling and looking your best every day.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-1', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h3>Shop deals in Fashion</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box8_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-2">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Shop deals in Fashion</h3>
+                <br />
+                Upgrade your wardrobe with our fashion-forward deals on stylish
+                apparel and accessories. Whether you’re searching for trendy
+                outfits, classic staples, or statement pieces for a special
+                event, we offer a variety of options to suit your style.
+                Discover unbeatable discounts on everything from casual wear to
+                elegant evening dresses and make every occasion a fashion
+                statement.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-2', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h3>Deals in Fabrics</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box1_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-3">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Deals in Fabrics</h3>
+                <br />
+                Unleash your creativity with our extensive range of high-quality
+                fabrics. From elegant silk and luxurious velvet to practical
+                denim and breathable cotton, our fabric collection is perfect
+                for any sewing project or home decor update. Choose from a
+                variety of colors, patterns, and textures to bring your vision
+                to life, whether you're crafting a custom garment or
+                redecorating your space.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-3', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h3>Refresh your Space</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box3_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-4">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Refresh your Space</h3>
+                <br />
+                Transform your home into a sanctuary with our refreshing home
+                decor deals. Browse through a variety of stylish furniture,
+                eye-catching wall art, and cozy textiles to rejuvenate your
+                living space. Our collection includes contemporary designs,
+                classic styles, and unique finds to help you create a space that
+                reflects your personal taste and makes your home more inviting
+                and comfortable.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-4', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box1 box">
+        <div class="box-content">
+          <h3>Deals in Smartphones</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box4_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-5">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Deals in Smartphones</h3>
+                <br />
+                Stay ahead of the curve with our incredible deals on the latest
+                smartphones. Explore top-rated models with cutting-edge
+                technology, high-resolution cameras, and powerful performance at
+                competitive prices. Whether you’re upgrading to a new device or
+                looking for a reliable budget-friendly option, our selection
+                ensures you find the perfect smartphone to stay connected and
+                productive.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-5', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h3>Makeup World</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box5_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-6">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Makeup World</h3>
+                <br />
+                Discover a world of beauty with our exclusive makeup deals. From
+                high-performance foundations and bold lipsticks to versatile
+                eyeshadows and luxurious skincare, we offer a comprehensive
+                range of products to enhance your natural beauty. Our collection
+                includes both trusted classics and the latest trends, ensuring
+                you have everything you need to achieve a flawless look for any
+                occasion.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-6', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h3>Pet Care</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box6_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-7">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>Pet Care</h3>
+                <br />
+                Give your pets the care they deserve with our top-quality pet
+                care deals. Find everything from nutritious food and tasty
+                treats to grooming supplies and interactive toys. Our selection
+                features products that cater to your pet's health, comfort, and
+                happiness, ensuring they receive the best care possible. Shop
+                now to keep your furry friends looking and feeling their best.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-7', this)">
+            See more
+          </button>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h3>New year, new supplies</h3>
+          <div
+            class="box-img"
+            style="background-image: url('box7_image.jpg')"
+          ></div>
+          <div class="popup" id="popup-8">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn">&times;</div>
+              <p>
+                <button id="close" onclick="close()">Close</button>
+                <br />
+                <h3>New year, new supplies</h3>
+                <br />
+                Start the new year with fresh supplies and get organized for
+                success. Whether you need office essentials, school supplies, or
+                home organization tools, our collection offers a wide range of
+                products to help you tackle the year ahead. From stylish
+                planners and efficient storage solutions to innovative tech
+                accessories, find everything you need to set yourself up for a
+                productive and prosperous year.
+              </p>
+            </div>
+          </div>
+          <button id="change" onclick="togglePopup('popup-8', this)">
+            See more
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="faq" id="faq">
+      <h4>FAQS (Frequently Asked Questions)</h4>
+      <button class="accordion">How can I return an item?</button>
+      <div class="panel">
+        <p>
+          You can return items within 30 days of receipt for a full refund. Just
+          visit your Orders page, select the item, and follow the return
+          instructions.
+        </p>
+      </div>
+
+      <button class="accordion">
+        Does Amazon offer international shipping?
+      </button>
+      <div class="panel">
+        <p>
+          Yes, Amazon ships internationally to over 100 countries. Shipping
+          options and costs will be displayed during checkout based on your
+          delivery location.
+        </p>
+      </div>
+
+      <button class="accordion">How do I track my order?</button>
+      <div class="panel">
+        <p>
+          After your order has been shipped, you'll receive a confirmation email
+          with a tracking number. You can use it to track your package in the
+          "Your Orders" section of your Amazon account.
+        </p>
+      </div>
+
+      <button class="accordion">What payment methods are accepted?</button>
+      <div class="panel">
+        <p>
+          Amazon accepts various payment methods including credit and debit
+          cards, Amazon gift cards, and digital payment options like PayPal in
+          some regions.
+        </p>
+      </div>
+      <button class="accordion">Can I change or cancel my order?</button>
+      <div class="panel">
+        <p>
+          You can change or cancel your order within 30 minutes of placing it.
+          Go to "Your Orders," find the order, and select "Change" or "Cancel"
+          items. After 30 minutes, changes may not be possible if the order is
+          already being processed.
+        </p>
+      </div>
+
+      <button class="accordion">How do I qualify for free shipping?</button>
+      <div class="panel">
+        <p>
+          To qualify for free shipping, your order must meet the minimum
+          purchase amount, which varies by region. You can also get free
+          shipping with an Amazon Prime membership, which offers free two-day or
+          even same-day delivery on eligible items.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="foot-1">
+        <a href="#">Back to top</a>
+      </div>
+      <div class="foot-2">
+        <ul>
+          <p>Get to know us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Amazon</a>
+          <a>Investor Relations</a>
+          <a>Amazon Devices</a>
+          <a>Amazon Science</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a>Sell products on Amazon</a>
+          <a>Sell on Amazon Business</a>
+          <a>Sell apps on Amazon</a>
+          <a>Become an Affiliate</a>
+          <a>Advertise Your Products</a>
+          <a>Self-Publish with Us</a>
+          <a>Host an Amazon Hub</a>
+        </ul>
+        <ul>
+          <p>Amazon Payment Products</p>
+          <a>Amazon Business Card</a>
+          <a>Shop with Points</a>
+          <a>Reload Your Balance</a>
+          <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p>Let Us Help You</p>
+          <a>Amazon and COVID-19</a>
+          <a>Your Account</a>
+          <a>Your Orders</a>
+          <a>Shipping Rates & Policies</a>
+          <a>Returns & Replacements</a>
+          <a>Self-Publish with Us</a>
+          <a>Manage Your Content and Devices</a>
+          <a>Amazon Assistant</a>
+        </ul>
+      </div>
+      <div class="foot-3">
+        <div class="logo"></div>
+      </div>
+      <div class="foot-4">
+        <div class="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="javas.js"></script>
+  </body>
+</html>
