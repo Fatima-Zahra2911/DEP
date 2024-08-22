@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="An optimized web performance example with advanced techniques."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Performance Optimization</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="#" class="logo">WebOpt</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#optimization">Optimization</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Optimized Web Performance</h1>
+        <p>
+          Deliver faster, more efficient, and more engaging user experiences.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="features" class="features-section">
+        <h2>Key Features</h2>
+        <div class="feature-cards">
+          <article class="card">
+            <h3>Lazy Loading</h3>
+            <p>
+              Load images only when they enter the viewport to improve initial
+              load times.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Minified Assets</h3>
+            <p>
+              Reduce file sizes by minifying CSS, JavaScript, and HTML for
+              faster load times.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Responsive Design</h3>
+            <p>
+              Ensure your site looks great on all devices, improving user
+              experience.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="optimization" class="optimization-section">
+        <h2>Images with Lazy-Loading</h2>
+        <div class="image-gallery">
+          <img
+            src="placeholder.png"
+            data-src="highresolution1.jpeg"
+            alt="High Resolution Image 1"
+            class="lazy-load"
+          />
+          <img
+            src="placeholder.png"
+            data-src="highresolution2.jpeg"
+            alt="High Resolution Image 2"
+            class="lazy-load"
+          />
+          <img
+            src="placeholder.png"
+            data-src="highreolution3.jpg"
+            alt="High Resolution Image 3"
+            class="lazy-load"
+          />
+          <img
+            src="placeholder.png"
+            data-src="highresolution4.jpg"
+            alt="High Resolution Image 3"
+            class="lazy-load"
+          />
+          
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2024 WebOpt. All rights reserved.</p>
+      <a
+        href="https://developers.google.com/web/tools/lighthouse"
+        target="_blank"
+        >Check Performance with Lighthouse</a
+      >
+    </footer>
+    <script async src="javas.js"></script>
+  </body>
+</html>
